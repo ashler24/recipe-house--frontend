@@ -1,0 +1,148 @@
+.recipe-cover-img-sec-1 {
+  width: 100%;
+  height: 15rem;
+  position: relative;
+}
+
+.recipe-img-wrapper {
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipe-img {
+  width: 15rem;
+  height: inherit;
+}
+
+.recipe-info-box {
+  position: absolute;
+  box-shadow: inset 8px 0px 0 0 #5ca1bc, 0 4px 10px rgba(0, 0, 0, 0.2);
+  bottom: -8rem;
+  background: #ffffff;
+  width: 25rem;
+  margin: 1rem auto;
+  left: 0rem;
+  height: 10rem;
+}
+
+.recipe-name {
+  text-decoration: underline;
+  position: relative;
+  z-index: 5;
+  font-size: 1rem;
+}
+
+.recipe-name::after {
+  content: "";
+  width: 8rem;
+  height: 1rem;
+  color: #a3cad9;
+  background: #a3cad9;
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  z-index: -5;
+}
+
+@media only screen and (min-width: 640px) {
+  .recipe-cover-img-sec-1 {
+    width: 100%;
+    height: 18rem;
+    position: relative;
+  }
+
+  .recipe-img-wrapper {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .recipe-img {
+    width: 32rem;
+    height: inherit;
+  }
+
+  .recipe-info-box {
+    position: absolute;
+    box-shadow: inset 8px 0px 0 0 #5ca1bc, 0 4px 10px rgba(0, 0, 0, 0.2);
+    bottom: -6rem;
+    background: #ffffff;
+    width: 41rem;
+    left: 10rem;
+    height: 10rem;
+  }
+
+  .recipe-name {
+    text-decoration: underline;
+    position: relative;
+    z-index: 5;
+    font-size: 1.5rem;
+  }
+
+  .recipe-name::after {
+    content: "";
+    width: 14rem;
+    height: 1rem;
+    color: #a3cad9;
+    background: #a3cad9;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    z-index: -5;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .recipe-cover-img-sec-1 {
+    width: 100%;
+    height: 18rem;
+    position: relative;
+  }
+
+  .recipe-img-wrapper {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .recipe-img {
+    width: 32rem;
+    height: inherit;
+  }
+
+  .recipe-info-box {
+    position: absolute;
+    box-shadow: inset 8px 0px 0 0 #5ca1bc, 0 4px 10px rgba(0, 0, 0, 0.2);
+    bottom: -6rem;
+    background: #ffffff;
+    width: 41rem;
+    left: 10rem;
+    height: 10rem;
+  }
+
+  .recipe-name {
+    text-decoration: underline;
+    position: relative;
+    z-index: 5;
+    font-size: 1.5rem;
+  }
+
+  .recipe-name::after {
+    content: "";
+    width: 14rem;
+    height: 1rem;
+    color: #a3cad9;
+    background: #a3cad9;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    z-index: -5;
+  }
+}

@@ -17,6 +17,7 @@
 
 .swiper-container {
   height: 100%;
+  padding: 0 0 0.5rem 0;
 }
 
 .swiper-slide {
@@ -24,9 +25,24 @@
   place-items: center;
 }
 
+.show-recipe-btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+  }
+
+  .show-recipe-btn {
+    color: #5ca1bc;
+    font-size: 1.2rem;
+    margin: -0.6rem;
+  }
+
 @media screen and (min-width: 640px) {
   .swiper-container {
     width: 640px;
+    padding: 0 0 2rem 0;
   }
 
   .search-bar-sec-1 {
@@ -37,6 +53,10 @@
     height: 15rem;
   }
 
+  .search-bar-wrapper {
+    width: 60%;
+  }
+
   .recipe-carousel-sec-2 {
     padding: 2rem;
     height: 25rem;
@@ -44,9 +64,37 @@
   }
 }
 
+.card {
+  width: 15rem;
+  height: 15rem;
+  margin: 1.2rem;
+  padding: 0.2rem;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  border: 0;
+}
+
+.card .card-img-top {
+  height: 6rem;
+}
+
+.card-body .card-title {
+  font-size: 1.2rem;
+}
+
+.card-body .card-subtitle {
+  font-size: 1rem;
+}
+
+.card-body .card-text {
+  font-size: 0.7rem;
+  color: #080808;
+}
+
 @media screen and (min-width: 768px) {
   .swiper-container {
     width: 768px;
+    padding: 0 0 2rem 0;
   }
 
   .search-bar-sec-1 {
@@ -62,4 +110,52 @@
     /* height: 18rem; */
     background: #c8e1ea;
   }
+
+  .search-bar-wrapper {
+    width: 60%;
+  }
+
+  .card {
+    margin: 1rem;
+    width: 18rem;
+    height: 18rem;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+    border: 0;
+  }
+
+  .card .card-img-top {
+    height: 8rem;
+  }
+
+  .card-body .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #5ca1bc;
+    text-overflow: ellipsis;
+  }
+
+  .card-body .card-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .card-body .card-text {
+    font-size: 0.5rem;
+    color: #5a5959;
+  }
+
+  .show-recipe-btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+  }
+
+  .show-recipe-btn {
+    color: #5ca1bc;
+    font-size: 2rem;
+    margin: -1rem;
+  }
+
 }
