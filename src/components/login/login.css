@@ -1,0 +1,42 @@
+.login-form-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+}
+
+.login-form {
+  width: 45rem;
+  height: 40rem;
+}
+
+@media screen and (min-width: 640px) {
+  .login-form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+  }
+
+  .login-form {
+    width: 45rem;
+    height: 40rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .login-form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+  }
+
+  .login-form {
+    width: 45rem;
+    height: 40rem;
+    margin: 2rem auto;
+    padding: 3rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+}

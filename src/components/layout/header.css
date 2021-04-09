@@ -1,0 +1,50 @@
+@media screen and (max-width: 584px) {
+  .logoStyle {
+    color: #34697f;
+  }
+
+  .initialsStyle {
+    color: #5ca1bc;
+    font-weight: 400;
+  }
+
+  .initialsStyle,
+  .logoStyle {
+    font-size: 1.5rem;
+  }
+
+  .signUpBtnStyle {
+    background: #34697f;
+    color: #ffffff !important;
+    border: 0;
+    margin: 0.2rem;
+  }
+
+  .signInBtnStyle {
+    color: #5ca1bc;
+    border: 1px solid #34697f;
+    margin: 0.2rem;
+  }
+}
+
+.logoStyle {
+  color: #34697f;
+}
+
+.initialsStyle {
+  color: #5ca1bc;
+  font-weight: 600;
+}
+
+.signUpBtnStyle {
+  background: #34697f;
+  color: #ffffff !important;
+  border: 0;
+  margin: 0.2rem;
+}
+
+.signInBtnStyle {
+  color: #5ca1bc;
+  border: 1px solid #34697f;
+  margin: 0.2rem;
+}

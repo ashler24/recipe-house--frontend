@@ -4,14 +4,57 @@
   align-items: center;
   justify-content: center;
   height: 10rem;
+  margin: 2rem 0;
 }
 
 .search-bar-wrapper {
-  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.search-form {
+  flex: 1 1;
+  margin: 0 1rem 0 1rem;
+}
+
+.search-input-wrapper {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  grid-template-rows: 1fr;
+  border: 1px solid #b9b8b8;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px 0 rgba(130, 214, 233, 0.1);
+}
+
+.search-input-wrapper span {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.3rem;
+  border-right-width: 2px solid;
+}
+
+#recipeName {
+  border: 0;
+  outline: none;
+}
+
+#recipeName:active {
+  outline: unset;
+  box-shadow: unset;
+}
+
+#recipeName:focus {
+  outline: unset;
+  box-shadow: unset;
 }
 
 .recipe-carousel-sec-2 {
-  height: 18rem;
+  height: 25rem;
+  padding: 1rem 0;
   background: #c8e1ea;
 }
 
@@ -26,18 +69,18 @@
 }
 
 .show-recipe-btn-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 100%;
-    position: relative;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+}
 
-  .show-recipe-btn {
-    color: #5ca1bc;
-    font-size: 1.2rem;
-    margin: -0.6rem;
-  }
+.show-recipe-btn {
+  color: #5ca1bc;
+  font-size: 1.2rem;
+  margin: -0.6rem;
+}
 
 @media screen and (min-width: 640px) {
   .swiper-container {
@@ -106,13 +149,26 @@
   }
 
   .recipe-carousel-sec-2 {
-    padding: 2rem;
-    /* height: 18rem; */
+    padding: 0rem;
+    height: 24rem;
     background: #c8e1ea;
   }
 
   .search-bar-wrapper {
-    width: 60%;
+    width: 40%;
+    position: relative;
+    z-index: 5;
+  }
+
+  .recipe-svg-1 svg {
+    transform: scale(0.3);
+  }
+
+  .recipe-svg-1 {
+    position: absolute;
+    left: 44%;
+    z-index: -1;
+    transform: translate(-2%, -5%);
   }
 
   .card {
@@ -157,5 +213,4 @@
     font-size: 2rem;
     margin: -1rem;
   }
-
 }
