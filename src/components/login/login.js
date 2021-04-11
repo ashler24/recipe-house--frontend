@@ -8,7 +8,7 @@ const Login = () => {
 
     return (
         <>
-            <div className="login-form-wrapper">
+            <div className="container-sm login-form-wrapper">
                 <h3>Sign In</h3>
                 <br />
                 <div className="login-with-other-wrapper">
@@ -19,7 +19,7 @@ const Login = () => {
                         <Label>Username</Label>
                         <InputGroup>
                             <InputGroupAddon><FaRegUserCircle /></InputGroupAddon>
-                            <Input type="text" id="username" name="username" placeholder="Username" />
+                            <Input type="text" id="username" name="username" placeholder="username" />
                         </InputGroup>
                     </FormGroup>
                     {/* <FormGroup>
@@ -36,7 +36,7 @@ const Login = () => {
                             <Input type="password" id="password" name="password" placeholder="password" />
                         </InputGroup>
                     </FormGroup>
-
+                    <button type="submit" className="btn btn-md btn-block login-button">Sign In</button>
                 </Form>
             </div>
         </>

@@ -12,12 +12,21 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 80%;
 }
 
 .search-form {
   flex: 1 1;
   margin: 0 1rem 0 1rem;
+  position: relative;
+  z-index: 5;
+}
+
+.recipe-svg-1 {
+    transform: scale(0.18) translate(100%, -7%);
+    z-index: -1;
+    position: absolute;
+    left: -50%;
 }
 
 .search-input-wrapper {
@@ -27,6 +36,8 @@
   border: 1px solid #b9b8b8;
   border-radius: 5px;
   box-shadow: 0 4px 10px 0 rgba(130, 214, 233, 0.1);
+  place-items: center;
+  padding: 0 0 0 0.2rem;
 }
 
 .search-input-wrapper span {
