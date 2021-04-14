@@ -47,7 +47,7 @@ const ShowRecipe = () => {
 
     useEffect(() => {
         async function getRecipeById() {
-            let response = await api.get('/getRecipe/' + locationObj.state);
+            let response = await api.get('/recipes/getRecipe/' + locationObj.state);
             await console.log(response);
             setRecipe(response.data.recipeData);
             await console.log({ recipe });
@@ -81,7 +81,7 @@ const ShowRecipe = () => {
                         <RecipeIngredientsList ingsList={recipe.ingredients} />
                     </div>
                     <div className="waves">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#c8e1ea" fill-opacity="1" d="M0,192L60,165.3C120,139,240,85,360,90.7C480,96,600,160,720,192C840,224,960,224,1080,213.3C1200,203,1320,181,1380,170.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#c8e1ea" fillOpacity="1" d="M0,192L60,165.3C120,139,240,85,360,90.7C480,96,600,160,720,192C840,224,960,224,1080,213.3C1200,203,1320,181,1380,170.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
                     </div>
                 </div>
             </section>
@@ -92,7 +92,7 @@ const ShowRecipe = () => {
                         <RecipeInstructionsList insList={recipe.instructions} />
                     </div>
                     <div className="waves">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#c8e1ea" fill-opacity="1" d="M0,192L60,165.3C120,139,240,85,360,90.7C480,96,600,160,720,192C840,224,960,224,1080,213.3C1200,203,1320,181,1380,170.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#c8e1ea" fillOpacity="1" d="M0,192L60,165.3C120,139,240,85,360,90.7C480,96,600,160,720,192C840,224,960,224,1080,213.3C1200,203,1320,181,1380,170.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
                     </div>
                 </div>
 

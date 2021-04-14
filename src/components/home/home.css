@@ -180,6 +180,7 @@
     left: 44%;
     z-index: -1;
     transform: translate(-2%, -5%);
+    width: 50%;
   }
 
   .card {

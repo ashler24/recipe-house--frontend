@@ -100,7 +100,7 @@ const RecipeCarousel = ({ recipeList }) => {
                 {recipeList.map((recipe, i) => {
                     return (
                         <>
-                            <SwiperSlide key={shortid.generate()}><RecipeCard recipe={recipe} key={shortid.generate()} /></SwiperSlide>
+                            <SwiperSlide key={i}><RecipeCard recipe={recipe} key={shortid.generate()+i} /></SwiperSlide>
                         </>
                     )
                 })}
@@ -116,10 +116,9 @@ const Home = () => {
 
     useEffect(() => {
         async function getRecipeList() {
-            let response = await API.get('/');
+            let response = await API.get('/recipes');
             await console.log([...response.data]);
             setRecipeList([...response.data]);
-            await console.log({ recipeList });
         }
 
         getRecipeList();
